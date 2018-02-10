@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivamgupta.hisabkitab.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/image"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/ic_launcher_round"/>
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="250dp"
+                android:hint="USERNAME"
+                android:padding="10dp"
+                android:background="@drawable/roundrectanglebutton"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/password_round"/>
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="250dp"
+                android:inputType="textPassword"
+                android:background="@drawable/roundrectanglebutton"
+                android:hint="PASSWORD"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:layout_marginLeft="5dp"
+ />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:text="SIGN IN"
+            android:id="@+id/btnSignIn"
+            android:layout_marginTop="15sp"
+            android:textSize="25sp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundrectanglebutton"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="25sp"
+            android:id="@+id/btnSignup"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/roundrectanglebutton"
+            android:text="SIGN UP"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FORGOT PASSWORD?"
+            android:textSize="15sp"
+            android:id="@+id/tvForgotPass"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</LinearLayout>
